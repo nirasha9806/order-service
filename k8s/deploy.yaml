@@ -25,7 +25,7 @@ spec:
         app: order-service
     spec:
       containers:
-      - image: nirasha/order-service:{{tag}}
+      - image: nirasha/order-service:v1
         imagePullPolicy: Always
         name: order-service
         resources: {}
