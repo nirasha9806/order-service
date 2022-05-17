@@ -8,48 +8,8 @@ metadata:
   - service.kubernetes.io/load-balancer-cleanup
   labels:
     app: order-service
-  managedFields:
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:labels:
-          .: {}
-          f:app: {}
-      f:spec:
-        f:externalTrafficPolicy: {}
-        f:ports:
-          .: {}
-          k:{"port":5000,"protocol":"TCP"}:
-            .: {}
-            f:port: {}
-            f:protocol: {}
-            f:targetPort: {}
-        f:selector:
-          .: {}
-          f:app: {}
-        f:sessionAffinity: {}
-        f:type: {}
-    manager: kubectl-expose
-    operation: Update
-    time: "2022-05-17T14:56:30Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:metadata:
-        f:finalizers:
-          .: {}
-          v:"service.kubernetes.io/load-balancer-cleanup": {}
-      f:status:
-        f:loadBalancer:
-          f:ingress: {}
-    manager: kube-controller-manager
-    operation: Update
-    time: "2022-05-17T14:57:06Z"
   name: order-service
   namespace: default
-  resourceVersion: "248793"
-  uid: 224b9673-b5f6-4b70-a551-b4127cca7480
 spec:
   clusterIP: 10.80.2.40
   clusterIPs:

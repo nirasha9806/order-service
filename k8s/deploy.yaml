@@ -23,6 +23,8 @@ spec:
       creationTimestamp: null
       labels:
         app: order-service
+      name: order-service
+      namespace: default
     spec:
       containers:
       - image: nirasha/order-service:{{tag}}
