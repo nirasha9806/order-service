@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   annotations:
     deployment.kubernetes.io/revision: "1"
-  creationTimestamp: "2022-05-17T04:01:15Z"
+  creationTimestamp: "2022-05-17T14:55:54Z"
   generation: 2
   labels:
     app: order-service
@@ -48,7 +48,7 @@ metadata:
             f:terminationGracePeriodSeconds: {}
     manager: kubectl-create
     operation: Update
-    time: "2022-05-17T04:01:15Z"
+    time: "2022-05-17T14:55:54Z"
   - apiVersion: apps/v1
     fieldsType: FieldsV1
     fieldsV1:
@@ -82,11 +82,11 @@ metadata:
         f:updatedReplicas: {}
     manager: kube-controller-manager
     operation: Update
-    time: "2022-05-17T05:04:50Z"
+    time: "2022-05-17T14:59:54Z"
   name: order-service
   namespace: default
-  resourceVersion: "30659"
-  uid: e893a3e5-ef67-423d-b959-bf9c5a8c7cb4
+  resourceVersion: "249833"
+  uid: adb16b1e-d6ad-43d2-a9e5-bc78c366eaa1
 spec:
   progressDeadlineSeconds: 600
   replicas: 3
@@ -120,14 +120,14 @@ spec:
 status:
   availableReplicas: 3
   conditions:
-  - lastTransitionTime: "2022-05-17T04:01:15Z"
-    lastUpdateTime: "2022-05-17T04:01:43Z"
+  - lastTransitionTime: "2022-05-17T14:55:54Z"
+    lastUpdateTime: "2022-05-17T14:55:56Z"
     message: ReplicaSet "order-service-69679b5c4" has successfully progressed.
     reason: NewReplicaSetAvailable
     status: "True"
     type: Progressing
-  - lastTransitionTime: "2022-05-17T05:04:50Z"
-    lastUpdateTime: "2022-05-17T05:04:50Z"
+  - lastTransitionTime: "2022-05-17T14:59:54Z"
+    lastUpdateTime: "2022-05-17T14:59:54Z"
     message: Deployment has minimum availability.
     reason: MinimumReplicasAvailable
     status: "True"

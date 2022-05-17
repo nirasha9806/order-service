@@ -3,7 +3,7 @@ kind: Service
 metadata:
   annotations:
     cloud.google.com/neg: '{"ingress":true}'
-  creationTimestamp: "2022-05-17T04:35:29Z"
+  creationTimestamp: "2022-05-17T14:56:30Z"
   finalizers:
   - service.kubernetes.io/load-balancer-cleanup
   labels:
@@ -32,7 +32,7 @@ metadata:
         f:type: {}
     manager: kubectl-expose
     operation: Update
-    time: "2022-05-17T04:35:29Z"
+    time: "2022-05-17T14:56:30Z"
   - apiVersion: v1
     fieldsType: FieldsV1
     fieldsV1:
@@ -45,21 +45,21 @@ metadata:
           f:ingress: {}
     manager: kube-controller-manager
     operation: Update
-    time: "2022-05-17T04:36:02Z"
+    time: "2022-05-17T14:57:06Z"
   name: order-service
   namespace: default
-  resourceVersion: "20092"
-  uid: de41da75-8491-4a87-a088-f9a85398ac08
+  resourceVersion: "248793"
+  uid: 224b9673-b5f6-4b70-a551-b4127cca7480
 spec:
-  clusterIP: 10.80.5.182
+  clusterIP: 10.80.2.40
   clusterIPs:
-  - 10.80.5.182
+  - 10.80.2.40
   externalTrafficPolicy: Cluster
   ipFamilies:
   - IPv4
   ipFamilyPolicy: SingleStack
   ports:
-  - nodePort: 30336
+  - nodePort: 31030
     port: 5000
     protocol: TCP
     targetPort: 5000
@@ -70,4 +70,4 @@ spec:
 status:
   loadBalancer:
     ingress:
-    - ip: 34.133.134.209
+    - ip: 34.68.31.70
